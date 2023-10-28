@@ -40,9 +40,9 @@ function Header() {
       <Container>
         <div
           className={cn(
-          "mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-neutrals-600 bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50"  
+          "mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-neutrals-600 bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50 "  
           )}
-        >
+        style={{backgroundColor:"#0a0b0f80"}}>
           <div className="grid grid-cols-3">
             <div className="flex items-center lg:hidden">
               <MobileNavigation.Toggle
@@ -83,7 +83,6 @@ function Header() {
                 as="a"
                 href="/#contact"
                 size="small"
-                isGhost
                 className="rounded-full"
               >
                 Hit me up

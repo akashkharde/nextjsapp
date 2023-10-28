@@ -47,7 +47,7 @@ const Button = (props) => {
     return (
       <a
         className={cn(
-          buttonVariants[1].variants, // Accessing the variants property directly
+          buttonVariants[1].variants, 
           {
             foreground,
             background,
