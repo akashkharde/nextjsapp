@@ -1,12 +1,10 @@
 "use client";
-import lokkeestudiosWordmarkLogoImage from '../../../Assets/images/logos/lokkeestudios-wordmark.svg';
 import MobileNavigation from './MobileNavigation';
 import Button from '../Ui/Button';
 import Container from '../Ui/Container';
-import Image from '../Ui/Image';
 import  cn  from '../Lib/Utils';
-
 import { useState } from 'react';
+import { neutralsNine, neutralsTwo, neutralsZ, red } from '@/Assets/Const/ColorConst';
 
 const links = [
   {
@@ -39,9 +37,10 @@ function Header() {
     >
       <Container>
         <div
-          className={cn(
-          "mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-neutrals-600 bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50 "  
-          )}
+        className={cn(
+          'mt-4 rounded-full border borderColor p-2 transition-colors duration-500',
+          `bg-${neutralsNine}/90 backdrop-blur-md supports-[backdrop-filter]:bg-${neutralsNine}/50`
+        )}
         style={{backgroundColor:"#0a0b0f80"}}>
           <div className="grid grid-cols-3">
             <div className="flex items-center lg:hidden">
@@ -59,33 +58,30 @@ function Header() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="relative flex h-full items-center p-1 text-sm uppercase text-neutrals-50 after:absolute after:inset-x-0 after:bottom-[12.25%] after:h-px after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-neutrals-200 after:to-transparent after:transition-transform hover:after:-scale-x-100 focus-visible:after:-scale-x-100"
+                  className={`relative flex h-full items-center p-1 text-sm uppercase text-${neutralsZ} after:absolute after:inset-x-0 after:bottom-[12.25%] after:h-px after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-${neutralsTwo} after:to-transparent after:transition-transform hover:after:-scale-x-100 focus-visible:after:-scale-x-100`}
                 >
                   {link.label}
                 </a>
               ))}
             </nav>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center SvgName">
               <a
                 href="/"
                 title="Navigate home"
                 className="hover:animate-jiggle"
               >
-                <Image
-                  metadata={lokkeestudiosWordmarkLogoImage}
-                  alt="LOKKEE STUDIOS"
-                  className="h-3.5 md:h-4"
-                />
+                <span  className="font-medium ">WEB DEVELOPMENT</span>
               </a>
             </div>
-            <div className="flex items-center justify-end">
+            <div className="flex items-center justify-end ">
               <Button
-                as="a"
-                href="/#contact"
-                size="small"
-                className="rounded-full"
+                  as="a"
+                  href="/#contact"
+                  size="small"
+                  isGhost
+                  className="rounded-full text-white"
               >
-                Hit me up
+           Get in Touch
               </Button>
             </div>
           </div>

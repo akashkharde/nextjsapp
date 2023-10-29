@@ -3,6 +3,7 @@ import Container from '../Ui/Container';
 import  cn  from '../Lib/Utils';
 import { AnimatePresence, motion, useAnimate } from 'framer-motion';
 import { useEffect } from 'react';
+import { neutralsEight, neutralsNine, neutralsSix, neutralsTwo } from '@/Assets/Const/ColorConst';
 
 function MobileNavigation({ isOpen, onClose, links }) {
   useEffect(() => {
@@ -31,7 +32,7 @@ function MobileNavigation({ isOpen, onClose, links }) {
             opacity: 0,
           }}
           transition={{ duration: 0.1 }}
-          className={cn('border-neutrals-600 py-4 lg:hidden')}
+          className={cn('py-4 lg:hidden' , `border-${neutralsSix}`)}
         >
           <Container>
             <motion.nav
@@ -45,7 +46,7 @@ function MobileNavigation({ isOpen, onClose, links }) {
                 y: -10,
                 rotateX: 25,
               }}
-              className="flex flex-col justify-center divide-y-0.5 divide-neutrals-600"
+              className={`flex flex-col justify-center divide-y-0.5 divide-${neutralsSix}`}
             >
               {links.map((link, index) => (
                 <a
@@ -53,8 +54,8 @@ function MobileNavigation({ isOpen, onClose, links }) {
                   href={link.href}
                   onClick={onClose}
                   className={cn(
-                    'py-4 ps-2 uppercase text-neutrals-200 transition-[letter-spacing,color]',
-                    'hover:tracking-wider hover:text-neutrals-50 focus-visible:tracking-wider focus-visible:text-neutrals-50',
+                    `py-4 ps-2 uppercase text-${neutralsTwo} transition-[letter-spacing,color]`,
+                    `hover:tracking-wider hover:text-${neutralsTwo} focus-visible:tracking-wider focus-visible:text-${neutralsTwo}`,
                   )}
                 >
                   {link.label}
@@ -79,7 +80,7 @@ function MobileNavigationOverlay({ isOpen, onClose }) {
           transition={{ duration: 0.5 }}
           aria-hidden
           onClick={onClose}
-          className="fixed inset-0 -z-10 bg-neutrals-900/90 backdrop-blur-sm lg:hidden"
+          className={`fixed inset-0 -z-10 bg-${neutralsNine}/90 backdrop-blur-sm lg:hidden`}
         />
       )}
     </AnimatePresence>
@@ -154,7 +155,7 @@ function MobileNavigationToggle({ isOpen, onIsOpenChange,  }) {
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden
-        className="md:6-4 h-6 w-6 divide-y-0.5 divide-neutrals-800 md:h-7 "
+        className={`md:6-4 h-6 w-6 divide-y-0.5 divide-${neutralsEight} md:h-7`}
       >
         <motion.path
           fillRule="evenodd"

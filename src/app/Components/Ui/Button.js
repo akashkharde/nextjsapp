@@ -1,13 +1,15 @@
 "use client";
+import { cva } from 'class-variance-authority';
 import cn from '../Lib/Utils';
+import { neutralsNine, neutralsZ, primary } from '@/Assets/Const/ColorConst';
 
-const buttonVariants = [
-  'relative isolate flex justify-center items-center select-none overflow-hidden rounded-sm border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&:not(:disabled)]:before:scale-x-100 focus-visible:[&:not(:disabled)]:before:scale-x-100 active:[&:not(:disabled)]:scale-[1.01] disabled:opacity-70',
+const buttonVariants = cva(
+  'hoveranimation relative isolate flex justify-center items-center select-none overflow-hidden rounded-sm border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&:not(:disabled)]:before:scale-x-100 focus-visible:[&:not(:disabled)]:before:scale-x-100 active:[&:not(:disabled)]:scale-[1.01] disabled:opacity-70',
   {
     variants: {
       foreground: {
-        default: 'border-neutrals-50',
-        primary: 'border-primary',
+        default: `border-${neutralsZ}`,
+        primary: `border-${primary}`,
         error: 'border-error',
       },
       background: {
@@ -26,10 +28,55 @@ const buttonVariants = [
     compoundVariants: [
       {
         isGhost: false,
-        foreground: 'primary',
-        className: 'bg-primary hover:[&:not(:disabled)]:text-primary focus-visible:text-primary',
+        foreground: `${primary}`,
+        className: `bg-${primary} hover:[&:not(:disabled)]:text-${primary} focus-visible:text-${primary}`,
       },
-      // ... (rest of your compoundVariants)
+      {
+        isGhost: true,
+        background: `${primary}`,
+        className: `hover:[&:not(:disabled)]:text-${primary} focus-visible:text-${primary}`,
+      },
+      {
+        isGhost: true,
+        foreground: `${primary}`,
+        className: `text-${primary} before:bg-${primary}`,
+      },
+      {
+        isGhost: false,
+        background: `${primary}`,
+        className: `text-${primary} before:bg-${primary}`,
+      },
+      {
+        isGhost: false,
+        foreground: 'default',
+        className:
+          `bg-${neutralsZ} hover:[&:not(:disabled)]:text-${neutralsZ} focus-visible:text-${neutralsZ}`,
+      },
+      {
+        isGhost: true,
+        background: 'default',
+        className: `hover:[&:not(:disabled)]:text-${neutralsNine} focus-visible:text-${neutralsNine}`,
+      },
+      {
+        isGhost: true,
+        foreground: 'default',
+        className: `text-${neutralsZ} before:bg-${neutralsZ}`,
+      },
+      {
+        isGhost: false,
+        background: 'default',
+        className: `text-${neutralsNine} before:bg-${neutralsNine}`,
+      },
+      {
+        isGhost: false,
+        foreground: 'error',
+        className: 'bg-error hover:[&:not(:disabled)]:text-error focus-visible:text-error',
+      },
+      {
+        isGhost: true,
+        foreground: 'error',
+        className: 'text-error before:bg-error',
+      },
     ],
     defaultVariants: {
       foreground: 'default',
@@ -38,23 +85,23 @@ const buttonVariants = [
       isGhost: false,
     },
   },
-];
+);
 
 const Button = (props) => {
+  console.log(props);
   if (props.as === 'a') {
     const { foreground, background, size, isGhost, ref, children, className, ...restProps } = props;
-
     return (
       <a
         className={cn(
-          buttonVariants[1].variants, 
-          {
-            foreground,
-            background,
-            size,
-            isGhost,
-            className,
-          },
+          buttonVariants({
+              foreground,
+              background,
+              size,
+              isGhost,
+              className,
+            
+          })
         )}
         ref={ref}
         {...restProps}
@@ -62,21 +109,18 @@ const Button = (props) => {
         {children}
       </a>
     );
-  }
-
+  }else{
   const { foreground, background, size, isGhost, ref, children, className, ...restProps } = props;
-
   return (
     <button
       className={cn(
-        buttonVariants[1].variants, // Accessing the variants property directly
-        {
+        buttonVariants( {
           foreground,
           background,
           size,
           isGhost,
           className,
-        },
+        }),
       )}
       ref={ref}
       {...restProps}
@@ -84,6 +128,8 @@ const Button = (props) => {
       {children}
     </button>
   );
+  }
+
 };
 
 export default Button;

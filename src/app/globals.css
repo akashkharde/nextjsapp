@@ -2,173 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-.color-scheme-dark {
-  color-scheme: dark;
+
+.GetinTouch {
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 40px;
 }
 
-.mask-radial-faded {
-  mask-image: radial-gradient(circle at center center, black, transparent 75%);
+.SvgName {
+  transform: scale(1, 1.3);
+  letter-spacing: 1px;
 }
 
-.mask-inline-faded {
-  mask-image: linear-gradient(to right, transparent, black 25%, black 75%, transparent);
-}
-
-.bg-shiny-frame {
-  background:
-    linear-gradient(rgb(6, 9, 24), rgb(6, 9, 24)) padding-box padding-box,
-    linear-gradient(42deg, rgb(6, 9, 24) 45%, rgba(255, 254, 249, 0.9)) border-box border-box;
-}
-
-.play-state-paused {
-  animation-play-state: paused;
-}
-
-.scrollbar-thin {
-  scrollbar-width: thin;
-}
-
-/* Other Styles */
-.refractor {
-  background: rgba(22 26 44 / 0.4);
-}
-
-code[class*='language-'],
-pre[class*='language-'] {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
-  font-size: 0.875rem;
-  line-height: 1.4;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  tab-size: 4;
-  hyphens: none;
-  color: #fffef9;
-}
-
-pre > code[class*='language-'] {
-  font-size: 1em;
-}
-
-pre[class*='language-']::selection,
-pre[class*='language-'] ::selection,
-code[class*='language-']::selection,
-code[class*='language-'] ::selection {
-  text-shadow: none;
-  background: #6919ff;
-}
-
-pre[class*='language-'] {
-  padding: 0.75rem;
-  overflow: auto;
-}
-
-:not(pre) > code[class*='language-'] {
-  padding: 0.1em;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #6f7a9b;
-}
-
-.token.namespace {
-  opacity: 0.7;
-}
-
-.token.property,
-.token.function {
-  color: #38bdf8;
-}
-
-.token.tag-id,
-.token.selector,
-.token.atrule-id,
-.token.punctuation {
-  color: #fffef9;
-}
-
-code.language-javascript,
-.token.attr-name {
-  color: #38bdf8;
-}
-
-.token.tag,
-.token.string,
-.language-css .token.string,
-.language-scss .token.string,
-.style .token.string {
-  color: #00f090;
-}
-
-code.language-css,
-code.language-scss,
-.token.boolean,
-.token.entity,
-.token.url,
-.token.attr-value,
-.token.keyword,
-.token.control,
-.token.directive,
-.token.unit,
-.token.statement,
-.token.regex,
-.token.atrule,
-.token.placeholder,
-.token.variable,
-.token.operator {
-  color: #ff2e5b;
-}
-
-.token.deleted {
-  text-decoration: line-through;
-}
-
-.token.inserted {
-  border-bottom: 1px dotted #fffef9;
-  text-decoration: none;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-
-.token.important {
-  color: #38bdf8;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-pre > code.highlight {
-  outline: 0.4rem solid #38bdf8;
-  outline-offset: 0.4rem;
-}
-
-.refractor-marker {
-  background: rgba(105, 25, 255, 0.2);
-  border-inline-start: 2px solid #6919ff;
-  width: calc(100% + 1.5rem);
-  position: relative;
-  left: -0.75rem;
-}
 
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --black:#000;
+  --white:#fff;
+  --borderColor: #2E364F;
+
+    /* --neutrals-900: '#060918',
+    --neutrals-800: '#161A2C',
+    --neutrals-700: '#23263B',
+    --neutrals-600: '#2E364F',
+    --neutrals-500: '#4D5775',
+    --neutrals-400: '#6F7A9B',
+    --neutrals-300: '#96A1C0',
+    --neutrals-200: '#C7D0E5',
+    --neutrals-100: '#F0F2FE',
+    --neutrals-50: '#FFFEF9',
+    --success: '#00F090',
+    --warning: '#FFDC30',
+    --error: '#FF2E5B', */
+}
+.borderColor {
+  border-color: var(--borderColor);
+}
+
+.black{
+color: var(--black);
+}
+.bgblack{
+  color: var(--black);
+  }
+.white{
+  color:var(--white)
+}
+.bgwhite{
+  background-color:var(--white)
+}
+
+.hoveranimation:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(6 9 24 / var(--tw-text-opacity)) !important;
+}
+
+.hoveranimation:hover::before{
+  content:'';
+    --tw-scale-x: 1;
+    --tw-scale-0: 1;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 254 249 / var(--tw-bg-opacity));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -180,7 +77,7 @@ pre > code.highlight {
 }
 
 body {
-margin: 0;
-padding: 0;
-color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }

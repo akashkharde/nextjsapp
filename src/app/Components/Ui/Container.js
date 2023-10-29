@@ -3,7 +3,6 @@ import cn from '../Lib/Utils'
 import { forwardRef } from 'react';
 
 const Container = forwardRef(({ children, className, ...props }, ref) => {
-console.log(className);
     return(
 
         <div

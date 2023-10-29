@@ -32,7 +32,6 @@ const HomeSection = () => (
             href="/#services"
             background="primary"
             size="large"
-            isGhost
           >
             See services
           </Button>
