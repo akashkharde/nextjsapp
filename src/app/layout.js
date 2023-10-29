@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from './Components/Common/Header'
+import { neutralsNine, neutralsZ, primary } from '@/Assets/Const/ColorConst'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,7 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`"scrollbar-thin bg-neutrals-900 text-neutrals-50 antialiased selection:bg-primary selection:text-neutrals-50"${inter.className}`}  >
+      {/* <body className={`"scrollbar-thin bg-neutrals-900 text-neutrals-50 antialiased selection:bg-primary selection:text-neutrals-50"${inter.className}`}  > */}
+      <body className={`scrollbar-thin bg-${neutralsNine} text-${neutralsZ} antialiased selection:${primary} selection:text-${neutralsZ}`}  >
+
         {children}  
       <Header />
       <slot />

@@ -81,9 +81,23 @@ body {
   padding: 0;
   color: #fff;
 }
+.Home__Section{
+  position: relative;
+  background-image: radial-gradient(147% 114% at 50% 103%, #DEDEDE 5.3%, #DEDEDE 20.1%, #59A3BD 30.5%, #1C4460 50%, #0B1117 70%);
+}
+/* .Home__Section::after {
+  background-color: initial;
+  background-image: linear-gradient(180deg, hsla(240, 4%, 15%, 0) 0%, hsla(240, 3.9%, 15.1%, 0.028) 11.87%, hsla(240, 3.9%, 15.1%, 0.104) 22.5%, hsla(240, 3.9%, 15.1%, 0.216) 32.18%, hsla(240, 3.9%, 15.1%, 0.352) 41.25%, hsla(240, 3.9%, 15.1%, 0.5) 50%, hsla(240, 3.9%, 15.1%, 0.648) 58.75%, hsla(240, 3.9%, 15.1%, 0.784) 67.82%, hsla(240, 3.9%, 15.1%, 0.896) 77.5%, hsla(240, 3.9%, 15.1%, 0.972) 88.13%, hsl(240, 3.9%, 15.1%) 100%);
+  left: 0;
+  bottom: 0;
+  content: "";
+  height: 250px;
+  position: absolute;
+  width: 100%;
+} */
 @media screen and (max-width: 768px) {
   .SvgName {
-    transform: scale(1);
+    transform: scale(0.9, 1);
     letter-spacing:normal;
     text-align: center;
   }

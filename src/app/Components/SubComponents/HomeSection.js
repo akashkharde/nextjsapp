@@ -5,16 +5,13 @@ import Button from '../Ui/Button';
 import Container from '../Ui/Container';
 
 const HomeSection = () => (
-  <section
-    aria-labelledby="hero-heading"
-    className="sticky inset-0 flex h-screen w-full flex-col justify-center py-28" style={{backgroundColor :"#6919ff"}}
-  >
-    <GridBackground  />
+  <div
+    className="flex h-screen w-full flex-col justify-center py-28 ">
     <Container>
       <div className="flex flex-col items-center justify-center">
         <h1
           id="hero-heading"
-          className="text-center text-4xl/tight font-bold text-neutrals-50 sm:text-5xl/tight md:text-7xl lg:text-8xl/tight"
+          className="text-center text-2xl/tight font-bold text-neutrals-50 sm:text-5xl/tight md:text-7xl lg:text-8xl/tight"
         >
           Web Development <br />and Design Studio <br />from the Future
         </h1>
@@ -38,7 +35,7 @@ const HomeSection = () => (
         </div>
       </div>
     </Container>
-  </section>
+  </div>
 );
 
 export default HomeSection;

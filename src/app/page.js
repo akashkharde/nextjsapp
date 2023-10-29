@@ -4,14 +4,18 @@ import HomeSection from "./Components/SubComponents/HomeSection";
 import RootLayout from "./layout";
 
 
-export default function  Home () {
+export default function Home() {
 
-  return(
-  
-   <main id="main">
-   <HomeSection />
-   <HomeAbout/>
-   </main>
+  return (
+
+    <main className="main">
+      <section className="Home__Section">
+        <HomeSection />
+      </section>
+      <section>
+        <HomeAbout />
+      </section>
+    </main>
 
   )
 }
