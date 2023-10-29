@@ -2,7 +2,7 @@
 import MobileNavigation from './MobileNavigation';
 import Button from '../Ui/Button';
 import Container from '../Ui/Container';
-import  cn  from '../Lib/Utils';
+import cn from '../Lib/Utils';
 import { useState } from 'react';
 import { neutralsNine, neutralsTwo, neutralsZ, red } from '@/Assets/Const/ColorConst';
 
@@ -37,11 +37,11 @@ function Header() {
     >
       <Container>
         <div
-        className={cn(
-          'mt-4 rounded-full border borderColor p-2 transition-colors duration-500',
-          `bg-${neutralsNine}/90 backdrop-blur-md supports-[backdrop-filter]:bg-${neutralsNine}/50`
-        )}
-        style={{backgroundColor:"#0a0b0f80"}}>
+          className={cn(
+            'mt-4 rounded-full border borderColor p-2 transition-colors duration-500',
+            `bg-${neutralsNine}/90 backdrop-blur-md supports-[backdrop-filter]:bg-${neutralsNine}/50`
+          )}
+          style={{ backgroundColor: "#0a0b0f80" }}>
           <div className="grid grid-cols-3">
             <div className="flex items-center lg:hidden">
               <MobileNavigation.Toggle
@@ -70,18 +70,18 @@ function Header() {
                 title="Navigate home"
                 className="hover:animate-jiggle"
               >
-                <span  className="font-medium ">WEB DEVELOPMENT</span>
+                <span className="font-medium SvgName">WEB DEVELOPMENT</span>
               </a>
             </div>
             <div className="flex items-center justify-end ">
               <Button
-                  as="a"
-                  href="/#contact"
-                  size="small"
-                  isGhost
-                  className="rounded-full text-white"
+                as="a"
+                href="/#contact"
+                size="small"
+                isGhost
+                className="rounded-full text-white"
               >
-           Get in Touch
+                Get in Touch
               </Button>
             </div>
           </div>

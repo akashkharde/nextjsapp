@@ -81,3 +81,10 @@ body {
   padding: 0;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .SvgName {
+    transform: scale(1);
+    letter-spacing:normal;
+    text-align: center;
+  }
+}
