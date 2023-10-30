@@ -5,6 +5,7 @@ import Image from '../Ui/Image';
 import { Caption, Paragraph } from '../Ui/TypoGraphy';
 import  Container  from '../Ui/Container';
 import Title from '../Common/Title';
+import TypoSmoke from '../Ui/TypingHeading';
 
 const headings = [
   'Developer',
@@ -19,7 +20,12 @@ function HomeAbout() {
   return (
 
   <Container >
-    <Title name={"About"} />
+   <div>
+   <Title name={"About"} />
+   </div>
+    <div className='relative top:9'>
+      <TypoSmoke headings={headings} />
+    </div>
   </Container>
   );
 }
