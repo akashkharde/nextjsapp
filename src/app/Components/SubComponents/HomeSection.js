@@ -6,9 +6,9 @@ import Container from '../Ui/Container';
 
 const HomeSection = () => (
   <div
-    className="flex h-screen w-full flex-col justify-center py-28 ">
-    <Container>
-      <div className="flex flex-col items-center justify-center">
+    className=" flex h-screen w-full flex-col justify-center py-28 ">
+    <Container >
+      <div className="flex flex-col items-center justify-center HomeSection_div relative z-1">
         <h1
           id="hero-heading"
           className="text-center text-2xl/tight font-bold text-neutrals-50 sm:text-5xl/tight md:text-7xl lg:text-8xl/tight"

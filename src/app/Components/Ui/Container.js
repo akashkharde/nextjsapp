@@ -2,12 +2,11 @@
 import cn from '../Lib/Utils'
 import { forwardRef } from 'react';
 
-const Container = forwardRef(({ children, className, ...props }, ref) => {
+const Container = forwardRef(({ children, className, ...props }) => {
     return(
 
         <div
-          className={cn('mx-auto w-11/12 max-w-7xl 2xl:w-4/5', className)}
-          ref={ref}
+          className={cn('mx-auto w-11/12 max-w-7xl 2xl:w-4/', className)}
           {...props}
         >
           {children}
