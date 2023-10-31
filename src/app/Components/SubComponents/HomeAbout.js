@@ -1,5 +1,4 @@
 "use client";
-import lokkeeImage from '../../../Assets/images/lokkee.webp';
 import TypingHeading from '../Ui/TypingHeading';
 import Image from '../Ui/Image';
 import { Caption, Paragraph } from '../Ui/TypoGraphy';
@@ -23,7 +22,7 @@ function HomeAbout() {
    <div>
    <Title name={"About"} />
    </div>
-    <div className='relative top:9'>
+    <div className='relative top-14'>
       <TypoSmoke headings={headings} />
     </div>
   </Container>
