@@ -100,7 +100,6 @@ const Button = (props) => {
               size,
               isGhost,
               className,
-            
           })
         )}
         ref={ref}

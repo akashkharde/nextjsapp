@@ -10,37 +10,29 @@ import nodejs from '../../../Assets/images/nodejs.png';
 import ex from '../../../Assets/images/ex.png';
 import react from '../../../Assets/images/react js.png';
 import db from '../../../Assets/images/mongodb.png';
+import Image from 'next/image';
 
 
 const HomeSection = () => (
   <div
-    className=" flex h-screen w-full flex-col justify-center py-28 ">
+    className=" flex h-screen w-full flex-col justify-center items-center">
     <Container >
-      <div className="flex flex-col items-center justify-center HomeSection_div relative z-1">
+      <div className="flex flex-col items-center justify-center HomeSection_div relative z-1 mt-16">
         <h1
           id="hero-heading"
-          className={`text-center text-2xl/tight font-bold text-${neutralsZ} sm:text-5xl/tight md:text-7xl lg:text-8xl/tight`}
+          className={`text-center text-4xl/tight font-bold text-${neutralsZ} sm:text-4xl/tight md:text-6xl lg:text-7xl/tight scale-105`}
         >
           TRANSFORMING IDEAS INTO DIGITAL REALITIES
         </h1>
-        {/* <div className='flex'> 
-          <img className='h-6 w-auto' metadata={html} alt='html' />
-          <img className='h-6 w-6' metadata={css} alt='css' />
-          <img className='h-6 w-6' metadata={javascript} alt='js' />
-          <img className='h-6 w-6' metadata={nodejs} alt='nodejs' />
-          <img className='h-6 w-6' metadata={ex} alt='express' />
-          <img className='h-6 w-6' metadata={react} alt='react' />
-          <img className='h-6 w-6' metadata={db} alt='mongodb' />
-        </div> */}
-         <div className='flex'> 
-      <img className='h-6 w-auto' src={html} alt='html' />
-      <img className='h-6 w-6' src={css} alt='css' />
-      <img className='h-6 w-6' src={javascript} alt='js' />
-      <img className='h-6 w-6' src={nodejs} alt='nodejs' />
-      <img className='h-6 w-6' src={ex} alt='express' />
-      <img className='h-6 w-6' src={react} alt='react' />
-      <img className='h-6 w-6' src={db} alt='mongodb' />
-    </div>
+        <div className='flex my-12'>
+          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={html} alt='html' />
+          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={css} alt='css' />
+          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={javascript} alt='js' />
+          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={nodejs} alt='nodejs' />
+          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={ex} alt='express' />
+          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={react} alt='react' />
+          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={db} alt='mongodb' />
+        </div>
         <div className="mt-12 flex items-stretch gap-x-6 gap-y-3 max-sm:flex-col sm:items-center">
           <Button
             as="a"
