@@ -8,7 +8,7 @@ import css from '../../../Assets/images/css.png';
 import javascript from '../../../Assets/images/javascript.png';
 import nodejs from '../../../Assets/images/nodejs.png';
 import ex from '../../../Assets/images/ex.png';
-import react from '../../../Assets/images/react js.png';
+import react from '../../../Assets/images/reactjs.png';
 import db from '../../../Assets/images/mongodb.png';
 import Image from 'next/image';
 
