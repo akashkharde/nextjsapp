@@ -5,26 +5,26 @@ import TypoSmoke from '../Ui/TypingHeading';
 // import dev from '../../../Assets/images/dev.jpg'
 // import Image from 'next/image';
 
-const headings = [
-  'Developer',
-  'Designer',
-  'Problem solver',
-  'Freelancer',
-  'Coffeeholic',
-  'Globetrotter',
-];
-const tech  = [
-  "HTML 5",
-  "CSS 3",
-  "TAILWAND CSS",
-  "BOOTSTRAP",
-  "JAVASCRIPT",
-  "REACT JS",
-  "NEXT JS",
-  "NODE JS",
-  "EXPRESS",
-  "MONGODB"
-]
+// const headings = [
+//   'Developer',
+//   'Designer',
+//   'Problem solver',
+//   'Freelancer',
+//   'Coffeeholic',
+//   'Globetrotter',
+// ];
+// const tech = [
+//   "HTML 5",
+//   "CSS 3",
+//   "TAILWAND CSS",
+//   "BOOTSTRAP",
+//   "JAVASCRIPT",
+//   "REACT JS",
+//   "NEXT JS",
+//   "NODE JS",
+//   "EXPRESS",
+//   "MONGODB"
+// ]
 
 function HomeAbout() {
   return (
@@ -34,14 +34,21 @@ function HomeAbout() {
         <Title name={"About"} />
       </div>
       <div className='relative top-14 my-16 h-16' >
-        <TypoSmoke headings={headings} />
+        <TypoSmoke headings={[
+          'Developer',
+          'Designer',
+          'Problem solver',
+          'Freelancer',
+          'Coffeeholic',
+          'Globetrotter',
+        ]} />
       </div>
 
       <div className='items-center justify-space grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4'>
         <div className='items-center justify-center flex'>
           {/* <Image src={dev} alt='myImage' className="lg:h-80 lg:w-80 md:h-80 md:w-80  sm:h-60 sm:w-60 h-60 w-60 mx-1 rounded-full" /> */}
         </div>
-        <div className=''>
+        <div>
           <div className='h-20'>
             <div className="home_about_content">
               <h2>DeveLoper</h2>
