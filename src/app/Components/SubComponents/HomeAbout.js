@@ -50,7 +50,7 @@ function HomeAbout() {
         </div>
         <div>
           <div className='h-20'>
-            <div className="home_about_content">
+            <div>
               <h2>DeveLoper</h2>
               <h2>DeveLoper</h2>
             </div>
