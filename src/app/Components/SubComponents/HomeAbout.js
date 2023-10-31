@@ -39,7 +39,7 @@ function HomeAbout() {
 
       <div className='items-center justify-space grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4'>
         <div className='items-center justify-center flex'>
-          <Image src={dev} alt='myImage' className="lg:h-80 lg:w-80 md:h-80 md:w-80  sm:h-60 sm:w-60 h-60 w-60 mx-1 rounded-full" />
+          {/* <Image src={dev} alt='myImage' className="lg:h-80 lg:w-80 md:h-80 md:w-80  sm:h-60 sm:w-60 h-60 w-60 mx-1 rounded-full" /> */}
         </div>
         <div className=''>
           <div className='h-20'>
