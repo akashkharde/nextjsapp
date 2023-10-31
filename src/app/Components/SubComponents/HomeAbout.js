@@ -2,7 +2,7 @@
 import Container from '../Ui/Container';
 import Title from '../Common/Title';
 import TypoSmoke from '../Ui/TypingHeading';
-import dev from '../../../Assets/images/dev.JPG'
+import dev from '../../../Assets/images/dev.jpg'
 import Image from 'next/image';
 
 const headings = [
