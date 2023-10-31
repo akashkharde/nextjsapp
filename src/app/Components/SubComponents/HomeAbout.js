@@ -1,9 +1,6 @@
 "use client";
 import Container from '../Ui/Container';
-import Title from '../Common/Title';
-import TypoSmoke from '../Ui/TypingHeading';
-import dev from '../../../Assets/images/dev.JPG'
-import Image from 'next/image';
+
 
 const headings = [
   'Developer',
@@ -30,7 +27,7 @@ function HomeAbout() {
   return (
 
     <Container >
-
+      
 
     </Container>
   );
