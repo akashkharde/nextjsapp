@@ -49,7 +49,7 @@ function HomeAbout() {
             </div>
           </div>
           <div className='text-xl text-justify'>
-            Welcome to my digital workspace! I'm Akash, a passionate and versatile Fullstack Web Developer dedicated to transforming innovative ideas into functional, user-friendly applications. With a keen eye for detail and a commitment to excellence, I bring a wealth of experience in crafting dynamic and responsive web solutions.
+            Welcome to my digital workspace! I&apos;m Akash, a passionate and versatile Fullstack Web Developer dedicated to transforming innovative ideas into functional, user-friendly applications. With a keen eye for detail and a commitment to excellence, I bring a wealth of experience in crafting dynamic and responsive web solutions.
           </div>
         </div>
       </div>
