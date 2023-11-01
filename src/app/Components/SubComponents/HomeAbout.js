@@ -13,7 +13,7 @@ const headings = [
   'Coffeeholic',
   'Globetrotter',
 ];
-const tech  = [
+const tech = [
   "HTML 5",
   "CSS 3",
   "TAILWAND CSS",
@@ -39,7 +39,7 @@ function HomeAbout() {
 
       <div className='items-center justify-space grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4'>
         <div className='items-center justify-center flex'>
-          <Image src={dev} alt='myImage' className="lg:h-80 lg:w-80 md:h-80 md:w-80  sm:h-60 sm:w-60 h-60 w-60 mx-1 rounded-full" />
+          <Image src={dev} alt='myImage' className="lg:h-80 lg:w-80 md:h-80 md:w-80  sm:h-40 sm:w-40 h-40 w-40 mx-1 rounded-full" />
         </div>
         <div >
           <div className='h-20'>
@@ -53,8 +53,12 @@ function HomeAbout() {
           </div>
         </div>
       </div>
-      <div className='bg-[#000] '>
-
+      <div className='flex  pb-10 '>
+        {tech && tech.map((item, i) => {
+          return (
+            <div className='border borderColor rounded-full px-5 py-1 w-fit  mx-4 whitespace-nowrap  group-hover:play-state-paused  infiniteLinearSlider' key={i}>{item}</div>
+          )
+        })}
       </div>
 
     </Container>
