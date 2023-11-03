@@ -88,7 +88,6 @@ const buttonVariants = cva(
 );
 
 const Button = (props) => {
-  console.log(props);
   if (props.as === 'a') {
     const { foreground, background, size, isGhost, ref, children, className, ...restProps } = props;
     return (

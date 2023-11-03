@@ -8,7 +8,6 @@ import HomeServices from "./Components/SubComponents/HomeServices";
 export default function Home() {
 
   return (
-
     <div className="main">
        <Header />
       <section className="Home__Section">
@@ -21,6 +20,5 @@ export default function Home() {
         <HomeServices />
       </section>
     </div>
-
   )
 }
