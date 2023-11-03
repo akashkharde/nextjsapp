@@ -15,9 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       {/* <body className={`"scrollbar-thin bg-neutrals-900 text-neutrals-50 antialiased selection:bg-primary selection:text-neutrals-50"${inter.className}`}  > */}
       <body className={`scrollbar-thin bg-${neutralsNine} text-${neutralsZ} antialiased selection:${primary} selection:text-${neutralsZ}`}  >
-
         {children}  
-      <Header />
       <slot />
        </body>
     </html>
