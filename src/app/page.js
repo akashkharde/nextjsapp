@@ -12,7 +12,7 @@ export default function Home() {
       <section className="Home__Section">
         <HomeSection />
       </section>
-      <section className="home_aboutTheme h-[145vh]  lg:h-[100vh] md:h-[110vh] sm:h-[145vh]  "  id="about">
+      <section className="home_aboutTheme"  id="about">
         <HomeAbout />
       </section>
       <section className="home_servicesTheme"  id="services">

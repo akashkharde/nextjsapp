@@ -17,23 +17,23 @@ const HomeSection = () => (
   <div
     className=" flex h-screen w-full flex-col justify-center items-center">
     <Container >
-      <div className="flex flex-col items-center justify-center HomeSection_div relative z-1 mt-16">
+      <div className="flex flex-col items-center justify-evenly HomeSection_div relative z-1">
         <h1
           id="hero-heading"
-          className={`text-center text-4xl/tight font-bold text-${neutralsZ} sm:text-4xl/tight md:text-6xl lg:text-7xl/tight scale-105`}
+          className={`text-center text-4xl/tight font-bold text-${neutralsZ} sm:text-5xl/tight md:text-6xl/tight lg:text-7xl/tight scale-105`}
         >
           TRANSFORMING IDEAS INTO DIGITAL REALITIES
         </h1>
         <div className='flex my-12'>
-          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={html} alt='html' />
-          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={css} alt='css' />
-          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={javascript} alt='js' />
-          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={nodejs} alt='nodejs' />
-          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={ex} alt='express' />
-          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={react} alt='react' />
-          <Image className='lg:h-20 md:h-16 sm:h-10 h-10 w-auto mx-1 wave' src={db} alt='mongodb' />
+          <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={html} alt='html' />
+          <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={css} alt='css' />
+          <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={javascript} alt='js' />
+          <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={nodejs} alt='nodejs' />
+          <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={ex} alt='express' />
+          <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={react} alt='react' />
+          <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={db} alt='mongodb' />
         </div>
-        <div className="mt-12 flex items-stretch gap-x-6 gap-y-3 max-sm:flex-col sm:items-center">
+        <div className="flex items-stretch gap-x-6 gap-y-3 max-sm:flex-col sm:items-center">
           <Button
             as="a"
             href="/#work"

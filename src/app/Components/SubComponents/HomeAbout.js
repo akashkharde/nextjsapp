@@ -4,42 +4,48 @@ import Title from '../Common/Title';
 import TypoSmoke from '../Ui/TypingHeading';
 import dev from '../../../Assets/images/dev.jpg';
 import Image from 'next/image';
-
-const headings = [
-  'Developer',
-  'Designer',
-  'Problem solver',
-  'Freelancer',
-  'Coffeeholic',
-  'Globetrotter',
-];
-const tech = [
-  "HTML 5",
-  "CSS 3",
-  "TAILWAND CSS",
-  "BOOTSTRAP",
-  "JAVASCRIPT",
-  "REACT JS",
-  "NEXT JS",
-  "NODE JS",
-  "EXPRESS",
-  "MONGODB"
-]
+import { InfiniteVerticalSlider } from '../Ui/InfiniteVerticalSlider';
 
 function HomeAbout() {
+  const headings = [
+    'Developer',
+    'Designer',
+    'Problem solver',
+    'Freelancer',
+    'Coffeeholic',
+    'Globetrotter',
+  ];
+
+  const tech = [
+    "HTML 5",
+    "CSS 3",
+    "TAILWAND CSS",
+    "BOOTSTRAP",
+    "JAVASCRIPT",
+    "REACT JS",
+    "NEXT JS",
+    "NODE JS",
+    "EXPRESS",
+    "MONGODB",
+    "SEO"
+  ].map((tech , i) =>({
+    id:i+1,
+    tech
+  } ))
+
   return (
 
     <Container >
-      <div className='mt-28'>
+      <div className='mt-24'>
         <Title name={"About"} />
       </div>
-      <div className='relative top-14 my-16 h-16' >
+      <div className='relative top-14 my-20 h-20 flext items-center' >
         <TypoSmoke headings={headings} />
       </div>
 
-      <div className='items-center justify-space grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4'>
+      <div className='items-center justify-space grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-20'>
         <div className='items-center justify-center flex'>
-          <Image src={dev} alt='myImage' className="lg:h-80 lg:w-80 md:h-80 md:w-80  sm:h-40 sm:w-40 h-40 w-40 mx-1 rounded-full" />
+          <Image src={dev} alt='myImage' className="lg:h-72 lg:w-72 md:h-80 md:w-80  sm:h-40 sm:w-40 h-40 w-40 mx-1 rounded-full" />
         </div>
         <div >
           <div className='h-20'>
@@ -53,13 +59,8 @@ function HomeAbout() {
           </div>
         </div>
       </div>
-      <div className='flex  pb-10 '>
-        {tech && tech.map((item, i) => {
-          return (
-            <div className='border borderColor rounded-full px-5 py-1 w-fit  mx-4 whitespace-nowrap  group-hover:play-state-paused  infiniteLinearSlider' key={i}>{item}</div>
-          )
-        })}
-      </div>
+ 
+      <InfiniteVerticalSlider tech={tech} />
 
     </Container>
   );
