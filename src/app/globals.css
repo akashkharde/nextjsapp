@@ -65,6 +65,8 @@
   height: 35px;
   z-index: 1;
   margin-top: 30px;
+  margin-bottom: 30px;
+
 }
 
 .wrapper {
@@ -153,7 +155,6 @@ body {
   width: 100%;
   background-image: linear-gradient(transparent 79%, #070707 100%), linear-gradient(#1f3a45 2.1%, transparent 22%), linear-gradient(0deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.5) 45.9%, transparent 100%), linear-gradient(90deg, #19292f  13.2%, #0F0F14 100%);
   position:absolute;
-  height: 100vh;
   z-index: -2;
   top: 200vh;
 }

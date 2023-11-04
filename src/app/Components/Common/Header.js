@@ -38,7 +38,7 @@ function Header() {
       <Container>
         <div
           className={cn(
-            'mt-4 rounded-full border borderColor p-2 transition-colors duration-500',
+            'mt-2 rounded-full border borderColor p-2 transition-colors duration-500',
             `bg-${neutralsNine}/90 backdrop-blur-md supports-[backdrop-filter]:bg-${neutralsNine}/50`
           )}
           style={{ backgroundColor: "#0a0b0f80" }}>

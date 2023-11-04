@@ -36,7 +36,7 @@ function HomeAbout() {
   return (
 
     <Container >
-      <div className='mt-28'>
+      <div className='mt-20'>
         <Title name={"About"} />
       </div>
       <div className='relative top-14 my-20 h-20 flext items-center' >
