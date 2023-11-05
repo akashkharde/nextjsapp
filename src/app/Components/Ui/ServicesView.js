@@ -22,7 +22,7 @@ function ServicesView() {
                         <div className='mb-3 px-3'> We specialize in crafting dynamic, responsive, and user-friendly websites tailored to meet your unique needs.</div>
                         <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Interactive, Unique, modern, customized  design</span></div>
                         <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Mobile,Tablet Responsiveness</span></div>
-                        <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Next.js for Enhanced User Experiences</span></div>
+                        <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Next js for Enhanced User Experiences</span></div>
                         <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Animations & interactions </span></div>
                         <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Search Engine Optimization (SEO) Excellence</span></div>
                         <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Reliable and Secure</span></div>
@@ -40,7 +40,7 @@ function ServicesView() {
                         <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Responsive and Adaptive Design</span></div>
                         <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Optimized performance </span></div>
                         <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Real-Time Updates and Notifications </span></div>
-                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Scalability with Node.js</span></div>
+                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Scalability with Node js</span></div>
                         <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Adaptive, scalable backend solutions </span></div>
                         <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Cross-Platform Compatibility </span></div>
                         <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Continuous Support and Maintenance  </span></div>
@@ -57,7 +57,7 @@ function ServicesView() {
                         <div className='main_heading_ text-3xl font-bold  mb-2'>SEO</div>
                         <div className='text-white text-2xl  px-3'>Free</div>    
                         <Link href={'/blog'} className='underline underline-offset-1 px-3 text-[#0b57d0]'>What SEO is ? </Link>
-                        <div className='mb-3 px-3'>it&apos;s important to convey how your expertise can improve a client's online visibility, increase organic traffic, and enhance overall website performance. </div>
+                        <div className='mb-3 px-3'>it&apos;s important to convey how your expertise can improve a client&apos;s online visibility, increase organic traffic, and enhance overall website performance. </div>
                         <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Strategic Keyword Research</span></div>
                         <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>On-Page Optimization</span></div>
                         <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Optimized performance </span></div>
