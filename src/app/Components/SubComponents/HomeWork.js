@@ -2,7 +2,7 @@ import Title from "../Common/Title";
 import Container from "../Ui/Container";
 import WorkCards from "../Ui/WorkSlider";
 
-export default function () {
+export default function HomeWork() {
 const dummyProjects = [
     {
       _id: 'project1',
