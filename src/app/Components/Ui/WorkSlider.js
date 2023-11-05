@@ -95,8 +95,8 @@ function ProjectCarousel({ projects }) {
     console.log(filteredProjects);
     return (
         <div>
-                        <div className="relative py-8">
-                <div aria-label="Carousel Controls" className="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-4 lg:px-8">
+                        <div className="relative py-1 top-56">
+                <div aria-label="Carousel Controls" className="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-2 lg:px-2">
                     <button type="button"
                         // onClick={scrollToPreviousSlide}
                         title="Previous project slide" aria-controls="project-carousel"
