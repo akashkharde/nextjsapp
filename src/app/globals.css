@@ -104,7 +104,7 @@ section {
 }
 
 .servicesbgSEO {
-  border-radius: 20px;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -115,7 +115,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 3px solid transparent;
   background: linear-gradient(45deg, purple, orange) border-box;
   -webkit-mask:

@@ -15,7 +15,7 @@ function ServicesView() {
             <div className="my-8 grid lg:grid-cols-3 md:grid-cols-1 gap-6" >
 
 
-                <div className="p-6 servicesbg  lg:col-span-1 md:col-span-1 border borderColor rounded-md">
+                <div className="p-6 servicesbg servicesbgSEO lg:col-span-1 md:col-span-1 rounded-md" style={styles}>
                     <motion.a ref={ref} href="/#about" aria-label="Lets Get Connect ">
                         <div className='main_heading_ text-3xl font-bold  mb-2'>Website</div>
                         <div className='text-white text-2xl  px-3'>Individual Price</div>
@@ -31,7 +31,7 @@ function ServicesView() {
                     </motion.a>
 
                 </div>
-                <div className=" servicesbg  p-6 lg:col-span-2 md:col-span-1 border borderColor rounded-md">
+                <div className=" servicesbg servicesbgSEO p-6 lg:col-span-2 md:col-span-1  rounded-md" style={styles}>
                     <motion.a ref={ref} href="/#about" aria-label="Lets Get Connect ">
                         <div className='main_heading_ text-3xl font-bold mb-2' >Web App</div>
                         <div className='text-white text-2xl  px-3'>Individual Price</div>
