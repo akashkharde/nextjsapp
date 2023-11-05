@@ -2,7 +2,7 @@
 import MobileNavigation from './MobileNavigation';
 import Button from '../Ui/Button';
 import Container from '../Ui/Container';
-import cn from '../Lib/Utils';
+import {cn} from '../Lib/Utils';
 import { useState } from 'react';
 import { neutralsNine, neutralsTwo, neutralsZ, red } from '@/Assets/Const/ColorConst';
 
@@ -12,12 +12,12 @@ const links = [
     href: '/#about',
   },
   {
-    label: 'Work',
-    href: '/#work',
-  },
-  {
     label: 'Services',
     href: '/#services',
+  },
+  {
+    label: 'Work',
+    href: '/#work',
   },
   {
     label: 'Blog',

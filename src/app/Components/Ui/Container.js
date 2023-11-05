@@ -1,5 +1,5 @@
 "use client";
-import cn from '../Lib/Utils'
+import {cn} from '../Lib/Utils'
 import { forwardRef } from 'react';
 
 const Container = forwardRef(({ children, className, ...props }) => {

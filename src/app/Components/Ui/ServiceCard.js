@@ -1,24 +1,13 @@
-import  cn from '../Lib/Utils';
+import  {cn} from '../Lib/Utils';
 import { MotionValue, motion, useMotionTemplate, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 function ServiceCard({
-  parentMousePositionX,
-  parentMousePositionY,
   children,
   className,
   ...props
 }) {
   const ref = useRef(null);
-
-  const mousePositionX = useTransform(
-    parentMousePositionX,
-    (value) => value - (ref.current?.getBoundingClientRect().left ?? 0),
-  );
-  const mousePositionY = useTransform(
-    parentMousePositionY,
-    (value) => value - (ref.current?.getBoundingClientRect().top ?? 0),
-  );
 
   return (
     <motion.a
@@ -31,10 +20,6 @@ function ServiceCard({
         'after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:bg-[radial-gradient(400px_circle_at_var(--mouse-position-x)_var(--mouse-position-y),rgba(255,254,249,0.6),transparent_60%)] after:opacity-0 after:transition after:duration-500 lg:group-hover:after:opacity-100',
         className,
       )}
-      style={{
-        '--mouse-position-x': useMotionTemplate`${mousePositionX}px`,
-        '--mouse-position-y': useMotionTemplate`${mousePositionY}px`,
-      }}
       {...props}
     >
       <div className="flex h-full w-full flex-col justify-between rounded-[inherit] bg-[#0C1021] p-8">

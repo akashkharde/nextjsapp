@@ -5,4 +5,7 @@ import { twMerge } from 'tailwind-merge';
 function cn(...inputs) {
   return twMerge(clsx(inputs));
 }
-export  default cn
+function clamp(value, min, max) {
+  return Math.min(Math.max(value, min), max);
+}
+export {cn, clamp}

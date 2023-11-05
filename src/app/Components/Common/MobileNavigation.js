@@ -1,6 +1,6 @@
 "use client";
 import Container from '../Ui/Container';
-import  cn  from '../Lib/Utils';
+import  {cn}  from '../Lib/Utils';
 import { AnimatePresence, motion, useAnimate } from 'framer-motion';
 import { useEffect } from 'react';
 import { neutralsEight, neutralsNine, neutralsSix, neutralsTwo } from '@/Assets/Const/ColorConst';

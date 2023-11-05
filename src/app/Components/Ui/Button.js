@@ -1,6 +1,6 @@
 "use client";
 import { cva } from 'class-variance-authority';
-import cn from '../Lib/Utils';
+import {cn} from '../Lib/Utils';
 import { neutralsNine, neutralsZ, primary } from '@/Assets/Const/ColorConst';
 
 const buttonVariants = cva(
