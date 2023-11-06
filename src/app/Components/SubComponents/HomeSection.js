@@ -17,7 +17,7 @@ const HomeSection = () => (
   <div
     className=" flex h-screen w-full flex-col justify-center items-center">
     <Container >
-      <div className="flex flex-col items-center justify-evenly HomeSection_div relative z-1">
+      <div className="flex flex-col items-center justify-evenly HomeSection_div relative">
         <h1
           id="hero-heading"
           className={`text-center text-4xl/tight font-bold text-${neutralsZ} sm:text-5xl/tight md:text-6xl/tight lg:text-7xl/tight scale-105`}
