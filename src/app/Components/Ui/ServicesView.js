@@ -1,7 +1,7 @@
 'use client'
 import { motion} from 'framer-motion';
 import { useRef } from 'react';
-import rocket from '../../Assets/images/rocket.svg'
+import rocket from '../../../../public/Assets/images/rocket.svg'
 import Image from 'next/image';
 import Link from 'next/link';
 

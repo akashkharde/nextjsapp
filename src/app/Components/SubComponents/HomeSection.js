@@ -2,14 +2,14 @@
 
 import Button from '../Ui/Button';
 import Container from '../Ui/Container';
-import { neutralsZ } from '@/Assets/Const/ColorConst';
-import html from '../../../Assets/images/html.png';
-import css from '../../../Assets/images/css.png';
-import javascript from '../../../Assets/images/javascript.png';
-import nodejs from '../../../Assets/images/nodejs.png';
-import ex from '../../../Assets/images/ex.png';
-import react from '../../../Assets/images/reactjs.png';
-import db from '../../../Assets/images/mongodb.png';
+import { neutralsZ } from '../../../../public/Assets/Const/ColorConst';
+import html from '../../../../public/Assets/images/html.png';
+import css from '../../../../public/Assets/images/css.png';
+import javascript from '../../../../public/Assets/images/javascript.png';
+import nodejs from '../../../../public/Assets/images/nodejs.png';
+import ex from '../../../../public/Assets/images/ex.png';
+import react from '../../../../public/Assets/images/reactjs.png';
+import db from '../../../../public/Assets/images/mongodb.png';
 import Image from 'next/image';
 
 

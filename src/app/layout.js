@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import './global.scss'
 
-import { neutralsNine, neutralsZ, primary } from '@/Assets/Const/ColorConst'
+import { neutralsNine, neutralsZ, primary } from '../../public/Assets/Const/ColorConst'
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -1,38 +1,48 @@
+'use client'
 import Title from "../Common/Title";
 import Container from "../Ui/Container";
 import WorkCards from "../Ui/WorkSlider";
+import Image from "next/image";
+
+
+
 
 export default function HomeWork() {
     const dummyProjects = [
         {
             _id: '1',
             name: 'BestBet Builder',
-            type:"Web App",
+            type: "Web App",
             status: 'On Going',
+            projectImage: "/Assets/images/pro1.jpg",
         },
         {
             _id: '2',
             name: 'Pinnac Enginnering Solution',
-            type:"WebSite",
-            status:"On Going",
+            type: "WebSite",
+            status: "On Going",
+            projectImage: '/Assets/images/pro2.png'
         },
         {
             _id: '3',
             name: 'PixiBytez',
-            type:"Website",
+            type: "Website",
             status: "Completed",
+            projectImage: '/Assets/images/pro3.png'
         },
         {
             _id: '4',
             name: 'Weather App',
-            type:"Website",
+            type: "Website",
             status: "Completed",
+            projectImage: '/Assets/images/pro4.jpg'
         },
         {
             _id: '',
             name: '',
-            type:"",
+            type: "",
             status: "",
+            projectImage: '../../Assets/images/pro5.jpg'
         },
     ];
 

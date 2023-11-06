@@ -3,7 +3,7 @@ import Container from '../Ui/Container';
 import  {cn}  from '../Lib/Utils';
 import { AnimatePresence, motion, useAnimate } from 'framer-motion';
 import { useEffect } from 'react';
-import { neutralsEight, neutralsNine, neutralsSix, neutralsTwo } from '@/Assets/Const/ColorConst';
+import { neutralsEight, neutralsNine, neutralsSix, neutralsTwo } from '../../../../public/Assets/Const/ColorConst';
 
 function MobileNavigation({ isOpen, onClose, links }) {
   useEffect(() => {

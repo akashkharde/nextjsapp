@@ -4,7 +4,7 @@ import Button from '../Ui/Button';
 import Container from '../Ui/Container';
 import {cn} from '../Lib/Utils';
 import { useState } from 'react';
-import { neutralsNine, neutralsTwo, neutralsZ, red } from '@/Assets/Const/ColorConst';
+import { neutralsNine, neutralsTwo, neutralsZ, red } from '../../../../public/Assets/Const/ColorConst';
 
 const links = [
   {

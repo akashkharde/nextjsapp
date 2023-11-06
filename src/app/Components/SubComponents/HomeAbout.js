@@ -2,7 +2,7 @@
 import Container from '../Ui/Container';
 import Title from '../Common/Title';
 import TypoSmoke from '../Ui/TypingHeading';
-import dev from '../../../Assets/images/dev.jpg';
+import dev from '../../../../public/Assets/images/dev.jpg';
 import Image from 'next/image';
 import { InfiniteVerticalSlider } from '../Ui/InfiniteVerticalSlider';
 
