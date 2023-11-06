@@ -1,4 +1,4 @@
-import { neutralsNine, neutralsZ, primary } from '../Assets/Const/ColorConst'
+import { neutralsNine, neutralsZ, primary } from '../../../public/Assets/Const/ColorConst'
 
 export default function RootLayout({ children }) {
 return (
