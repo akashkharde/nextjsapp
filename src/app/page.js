@@ -24,7 +24,7 @@ export default function Home() {
       <section className="home_workTheme"  id="work">
         <HomeWork />
       </section>
-      <section className="home_servicesTheme" id="services">
+      <section className="home_contactTheme" id="contact">
         <HomeContact />
       </section>
     </div>
