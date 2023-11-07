@@ -8,12 +8,12 @@ import { InfiniteVerticalSlider } from '../Ui/InfiniteVerticalSlider';
 
 function HomeAbout() {
   const headings = [
-    'Developer',
+    'Time-Conscious',
     'Designer',
     'Problem solver',
     'Freelancer',
-    'Coffeeholic',
-    'Globetrotter',
+    'Innovator',
+    'Innovative Visionary',
   ];
 
   const tech = [
@@ -39,7 +39,7 @@ function HomeAbout() {
       <div className='mt-20'>
         <Title name={"About"} />
       </div>
-      <div className='relative  my-8 h-12 flext items-center' >
+      <div className='relative  my-6 h-12 flext items-center' >
         <TypoSmoke headings={headings} />
       </div>
 
@@ -54,7 +54,7 @@ function HomeAbout() {
               <h2>DeveLoper</h2>
             </div>
           </div>
-          <div className='text-xl text-justify'>
+          <div className='text-xl text-justify font-sans'>
             Welcome to my digital workspace! I&apos;m Akash, a passionate and versatile Fullstack Web Developer dedicated to transforming innovative ideas into functional, user-friendly applications. With a keen eye for detail and a commitment to excellence, I bring a wealth of experience in crafting dynamic and responsive web solutions.
           </div>
         </div>

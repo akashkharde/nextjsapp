@@ -12,9 +12,6 @@ function HomeServices() {
         <div>
           <ServicesView />
         </div>
-        {/* <div>
-            <Title name={"Customer Stories"} />
-        </div> */}
       </div>
     </Container>
   )

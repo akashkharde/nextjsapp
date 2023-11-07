@@ -13,39 +13,37 @@ function ServicesView() {
     return (
         <div>
             <div className="my-8 grid lg:grid-cols-3 md:grid-cols-1 gap-6" >
-
-
-                <div className="p-6 servicesbg servicesbgSEO lg:col-span-1 md:col-span-1 rounded-md" style={styles}>
+                <div className="p-4 servicesbg servicesbgSEO lg:col-span-1 md:col-span-1 rounded-md" style={styles}>
                     <motion.a ref={ref} href="/#about" aria-label="Lets Get Connect ">
                         <div className='main_heading_ text-3xl font-bold  mb-2'>Website</div>
                         <div className='text-white text-2xl  px-3'>Individual Price</div>
-                        <div className='mb-3 px-3'> We specialize in crafting dynamic, responsive, and user-friendly websites tailored to meet your unique needs.</div>
-                        <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Interactive, Unique, modern, customized  design</span></div>
-                        <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Mobile,Tablet Responsiveness</span></div>
-                        <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Next js for Enhanced User Experiences</span></div>
-                        <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Animations & interactions </span></div>
-                        <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Search Engine Optimization (SEO) Excellence</span></div>
-                        <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Reliable and Secure</span></div>
-                        <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Catch-up meetings & close communication </span></div>
-                        <div className='flex items-center mb-2'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Continuous Support and Maintenance </span></div>
+                        <div className='mb-3 px-2'> We specialize in crafting dynamic, responsive, and user-friendly websites tailored to meet your unique needs.</div>
+                        <div className='flex items-center mb-2 '><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span>Interactive, Unique, modern, customized  design</span></div>
+                        <div className='flex items-center mb-2 '><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span>Mobile,Tablet Responsiveness</span></div>
+                        <div className='flex items-center mb-2 '><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span> Next js for Enhanced User Experiences</span></div>
+                        <div className='flex items-center mb-2 '><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span>Animations & interactions </span></div>
+                        <div className='flex items-center mb-2 '><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span> Search Engine Optimization (SEO) Excellence</span></div>
+                        <div className='flex items-center mb-2 '><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span>Reliable and Secure</span></div>
+                        <div className='flex items-center mb-2 '><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span> Catch-up meetings & close communication </span></div>
+                        <div className='flex items-center mb-2 '><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span> Continuous Support and Maintenance </span></div>
                     </motion.a>
 
                 </div>
-                <div className=" servicesbg servicesbgSEO p-6 lg:col-span-2 md:col-span-1  rounded-md" style={styles}>
+                <div className=" servicesbg servicesbgSEO p-4 lg:col-span-2 md:col-span-1  rounded-md" style={styles}>
                     <motion.a ref={ref} href="/#about" aria-label="Lets Get Connect ">
                         <div className='main_heading_ text-3xl font-bold mb-2' >Web App</div>
                         <div className='text-white text-2xl  px-3'>Individual Price</div>
                         <div className='mb-3 px-3'> It&apos;s essential to emphasize features that enhance functionality, user experience, and overall performance. </div>
-                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Unique, modern, customized design</span></div>
-                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Responsive and Adaptive Design</span></div>
-                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Optimized performance </span></div>
-                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Real-Time Updates and Notifications </span></div>
-                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Scalability with Node js</span></div>
-                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Adaptive, scalable backend solutions </span></div>
-                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Cross-Platform Compatibility </span></div>
-                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span>Continuous Support and Maintenance  </span></div>
-                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Search Engine Optimization (SEO) Excellence</span></div>
-                        <div className='flex items-center mb-2 px-3'><span><Image className='mx-3' src={rocket} alt='rocket' /></span> <span> Continuous Support and Maintenance </span></div>
+                        <div className='flex items-center mb-2 px-3'><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span>Unique, modern, customized design</span></div>
+                        <div className='flex items-center mb-2 px-3'><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span>Responsive and Adaptive Design</span></div>
+                        <div className='flex items-center mb-2 px-3'><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span> Optimized performance </span></div>
+                        <div className='flex items-center mb-2 px-3'><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span>Real-Time Updates and Notifications </span></div>
+                        <div className='flex items-center mb-2 px-3'><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span> Scalability with Node js</span></div>
+                        <div className='flex items-center mb-2 px-3'><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span>Adaptive, scalable backend solutions </span></div>
+                        <div className='flex items-center mb-2 px-3'><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span> Cross-Platform Compatibility </span></div>
+                        <div className='flex items-center mb-2 px-3'><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span>Continuous Support and Maintenance  </span></div>
+                        <div className='flex items-center mb-2 px-3'><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span> Search Engine Optimization (SEO) Excellence</span></div>
+                        <div className='flex items-center mb-2 px-3'><span><Image className='me-3' src={rocket} alt='rocket' /></span> <span> Continuous Support and Maintenance </span></div>
 
 
                     </motion.a>
@@ -53,7 +51,7 @@ function ServicesView() {
                 </div>
             </div>
             <div className="my-8 grid lg:grid-cols-6 md:grid-cols-1 items-center flex justify-center" >
-                <div className=" servicesbg servicesbgSEO  p-6 lg:col-start-2  lg:col-span-4 md:col-span-1  rounded-md " style={styles}>
+                <div className=" servicesbg servicesbgSEO  p-4 lg:col-start-2  lg:col-span-4 md:col-span-1  rounded-md " style={styles}>
                         <div className='main_heading_ text-3xl font-bold  mb-2'>SEO</div>
                         <div className='text-white text-2xl  px-3'>Free</div>    
                         <Link href={'/blog'} className='underline underline-offset-1 px-3 text-[#0b57d0]'>What SEO is ? </Link>

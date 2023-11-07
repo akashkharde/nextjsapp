@@ -1,8 +1,7 @@
 "use client";
 import {cn} from '../Lib/Utils'
-import { forwardRef } from 'react';
 
-const Container = forwardRef(({ children, className, ...props }) => {
+const Container = ({ children, className, ...props }) => {
     return(
 
         <div
@@ -12,7 +11,7 @@ const Container = forwardRef(({ children, className, ...props }) => {
           {children}
         </div>
       )
-});
+};
 Container.displayName = 'Container';
 
 export default Container;

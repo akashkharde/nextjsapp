@@ -73,7 +73,7 @@ const TypoSmoke = ({ headings }) => {
   }, [typingMode, updateTypingModeTimer]);
 
   return (
-    <div className="mb-4 text-4xl font-bold md:text-5xl text-light">
+    <div className="mb-4 text-3xl md:font-medium font-bold md:text-4xl text-light">
       <h2 className="sr-only">{currentHeading}</h2>
       <AnimatePresence mode="wait">
         <motion.h2

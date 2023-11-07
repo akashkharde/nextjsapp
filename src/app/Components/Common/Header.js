@@ -81,7 +81,7 @@ function Header() {
                 isGhost
                 className="rounded-full text-white"
               >
-                Get in Touch
+                Contact
               </Button>
             </div>
           </div>
