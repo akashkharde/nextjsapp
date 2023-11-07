@@ -96,7 +96,7 @@
 
 section {
   display: flex;
-  animation: swipe var(--speed) linear infinite backwards;
+  animation: swipe var(--speed) cubic-bezier(0.4, 0.4, 0.4, 0.4) infinite backwards;
   z-index: 1;
 }
 
@@ -176,6 +176,8 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
+  user-select: none;
+  font-family: "Average Sans", sans-serif; 
 }
 
 .main {
@@ -194,14 +196,10 @@ body {
   position: relative;
 }
 
-.HomeSection_div {
-  padding-top: 4rem;
-  position: relative;
-}
-
 .Home__Section::after {
   background-color: initial;
-  background-image: linear-gradient(180deg, hsla(240, 4%, 15%, 0) 0%, hsla(240, 3.9%, 15.1%, 0.028) 11.87%, hsla(240, 3.9%, 15.1%, 0.104) 22.5%, hsla(240, 3.9%, 15.1%, 0.216) 32.18%, hsla(240, 3.9%, 15.1%, 0.352) 41.25%, hsla(240, 3.9%, 15.1%, 0.5) 50%, hsla(240, 3.9%, 15.1%, 0.648) 58.75%, hsla(240, 3.9%, 15.1%, 0.784) 67.82%, hsla(240, 3.9%, 15.1%, 0.896) 77.5%, hsla(240, 3.9%, 15.1%, 0.972) 88.13%, hsl(240, 3.9%, 15.1%) 100%);
+  background-image: linear-gradient(180deg, hsla(240, 4%, 15%, 0) 0%, hsla(240, 3.9%, 15.1%, 0.028) 11.87%, hsla(240, 3.9%, 15.1%, 0.104) 22.5%, hsla(240, 3.9%, 15.1%, 0.216) 32.18%, hsla(240, 3.9%, 15.1%, 0.352) 41.25%, hsla(240, 3.9%, 15.1%, 0.5) 50%, hsl(197.13deg 37.2% 15.03% / 64.8%) 58.75%, hsl(194.37deg 50.07% 15.31% / 78.4%) 67.82%, hsl(193.85deg 38.1% 14.36% / 89.6%) 77.5%, hsl(194.88deg 39.18% 15.38% / 97.2%) 88.13%, #172832 100%);
+
   left: 0;
   bottom: 0;
   content: "";
@@ -213,20 +211,25 @@ body {
 
 .home_aboutTheme {
   width: 100%;
-  background-image: linear-gradient(transparent 79%, #1f3a45 100%), linear-gradient(#252528 2.1%, transparent 22%), linear-gradient(0deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.07) 45.9%, transparent 100%), linear-gradient(90deg, #255264 13.2%, #0F0F14 100%);
+  background-image: linear-gradient(transparent 79%, #1f3a45 100%), linear-gradient(#172832 2.1%, transparent 22%), linear-gradient(0deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.07) 45.9%, transparent 100%), linear-gradient(90deg, #255264 13.2%, #0F0F14 100%);
 }
 
 .home_servicesTheme {
   width: 100%;
-  background-image: linear-gradient(transparent 79%, #070707 100%), linear-gradient(#1f3a45 2.1%, transparent 22%), linear-gradient(0deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.5) 45.9%, transparent 100%), linear-gradient(90deg, #19292f 13.2%, #0F0F14 100%);
+  /* background-image: linear-gradient(transparent 79%, #070707 100%), linear-gradient(#1f3a45 2.1%, transparent 22%), linear-gradient(0deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.5) 45.9%, transparent 100%), linear-gradient(90deg, #19292f 13.2%, #0F0F14 100%); */
+  background-image: linear-gradient(transparent 79%,#172728),linear-gradient(#1f3a45 2.1%,transparent 22%),linear-gradient(0deg,rgba(0,0,0,.66),rgba(0,0,0,.5) 45.9%,transparent),linear-gradient(90deg,#19292f 13.2%,#0f0f14);
 }
 
 .home_workTheme {
-  background-image: linear-gradient(transparent 79%, #154245 100%), linear-gradient(#000000 2.1%, transparent 22%), linear-gradient(0deg, rgb(42 52 55 / 66%) 0%, rgba(0, 0, 0, 0.07) 45.9%, transparent 100%), linear-gradient(90deg, #214857 13.2%, #0F0F14 100%);
+  background-image: linear-gradient(transparent 79%, #154245 100%), linear-gradient(#172728 2.1%, transparent 22%), linear-gradient(0deg, rgb(42 52 55 / 66%) 0%, rgba(0, 0, 0, 0.07) 45.9%, transparent 100%), linear-gradient(90deg, #214857 13.2%, #172728 100%);
 }
 
 .home_contactTheme {
   background-image: linear-gradient(transparent 79%, #154245 100%), linear-gradient(#1a4347 2.1%, transparent 22%), linear-gradient(0deg, rgb(42 52 55 / 66%) 0%, rgba(0, 0, 0, 0.07) 45.9%, transparent 100%), linear-gradient(90deg, #214857 13.2%, #0F0F14 100%);
+}
+
+.home_footerTheme {
+  background-image: linear-gradient(transparent 79%, #154245 100%), linear-gradient(#1a4347 2.1%, transparent 22%), linear-gradient(0deg, rgb(42 52 55 / 66%) 0%, rgba(0, 0, 0, 0.07) 45.9%, transparent 100%), linear-gradient(90deg, #214857 13.2%, #21434b 100%);
 }
 
 ::-webkit-scrollbar {
@@ -425,4 +428,8 @@ body {
     margin-top: 45px;
     font-size: 4rem;
   }
+  .typewriter {
+    font-size: 30px !important;
+  }
+
 }

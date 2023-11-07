@@ -120,7 +120,7 @@ function ProjectCarousel({ projects }) {
                         key={project._id}
                         className={cn('aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md')} style={{ backgroundImage: `url(${project.projectImage})`, backgroundPosition: "center", backgroundSize: "cover", backgroundPosition: "top" }}>
                         <div className={cn(' group block h-full w-full rounded-md border borderColor flex flex-col items-center justify-center  backdrop-sepia-0 bg-black/80')}>
-                            <div className='text-white mb-3    '>{project.name}</div>
+                            <div className='text-white mb-3'>{project.name}</div>
                             <div className='text-white mb-3'>{project.type}</div>
                             <div className='text-white mb-3'>{project.status}</div>
                             <Button className="hover:scale-x-125 hover:transform-gpu" background="primary" size="small" onClick={() => handlePrjectAddress(project.Address)} >View Project</Button>

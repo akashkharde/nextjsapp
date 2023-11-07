@@ -1,4 +1,5 @@
 "use client"
+import Footer from "./Components/Common/Footer";
 import Header from "./Components/Common/Header";
 import HomeAbout from "./Components/SubComponents/HomeAbout";
 import HomeContact from "./Components/SubComponents/HomeContact";
@@ -26,6 +27,9 @@ export default function Home() {
       </section>
       <section className="home_contactTheme" id="contact">
         <HomeContact />
+      </section>
+      <section  className="home_footerTheme">
+      <Footer />
       </section>
     </div>
   )
