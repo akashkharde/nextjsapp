@@ -117,7 +117,6 @@ $currentPercentage: 0;
     padding: 20px 5px;
     color: #fff !important;
     letter-spacing: 2px;
-    font-family: cursive;
     &::after {
         content: "​";
         position: relative;
@@ -125,7 +124,7 @@ $currentPercentage: 0;
         display: inline-block;
         padding-right: 3px;
         padding-right: calc(3px + 0.1vw);
-        border-right: 10px solid rgba(#43d7ff, 0.75);
+        border-right: 10px solid rgba(#ffffff, 0.75);
         border-right: calc(1.1vw + 4px) solid rgba(var($white), 0.75);
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
         white-space: nowrap;
