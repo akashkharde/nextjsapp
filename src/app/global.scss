@@ -125,7 +125,7 @@ $currentPercentage: 0;
         padding-right: 3px;
         padding-right: calc(3px + 0.1vw);
         border-right: 10px solid rgba(#ffffff, 0.75);
-        border-right: calc(1.1vw + 4px) solid rgba(var($white), 0.75);
+        border-right: calc(1.1vw + 3px) solid rgba(#fff, 0.75);
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
         white-space: nowrap;
         animation: typed #{$durTotal + "s"} linear 1s infinite,
