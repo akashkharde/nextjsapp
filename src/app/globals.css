@@ -188,9 +188,18 @@ body {
   right: 0;
 }
 
+#hideContact {
+  display: none;
+}
+#contact {
+  overflow: scroll;
+  max-height: 90vh;
+}
 
 
-
+.borderColorWhite {
+  border-color: #fff;
+}
 .Home__Section {
   background-image: radial-gradient(147% 114% at 50% 103%, #33adcd 5.3%, #68b3d5 20.1%, #59A3BD 30.5%, #1C4460 50%, #0B1117 70%);
   position: relative;
@@ -426,7 +435,7 @@ body {
 @media screen and (max-width: 468px) {
   .home_about_content h2 {
     margin-top: 45px;
-    font-size: 4rem;
+    font-size: 4.6rem;
   }
   .typewriter {
     font-size: 30px !important;

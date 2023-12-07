@@ -81,7 +81,7 @@ function ProjectCarousel({ projects }) {
           }
     }
     return (
-        <div className=''>
+        <div className='mb-20'>
             <div className="relative py-1 top-56">
                 <div aria-label="Carousel Controls" className="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-2 lg:px-2">
                     <button type="button"
