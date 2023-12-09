@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div className="main">
-      <Header />
+      {/* <Header /> */}
       <section className="Home__Section">
         <HomeSection />
       </section>
