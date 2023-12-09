@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import './global.scss'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { neutralsNine, neutralsZ, primary } from '../../public/Assets/Const/ColorConst'
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`scrollbar-thin bg-${neutralsNine} text-${neutralsZ} antialiased selection:${primary} selection:text-${neutralsZ}`}  >
         {children}  
+        <SpeedInsights />
        </body>
     </html>
   )
