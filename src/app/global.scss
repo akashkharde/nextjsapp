@@ -57,42 +57,48 @@ $durTotal: 0;
 $currentPercentage: 0;
 
 // now THIS is where the magic happens... ✨
+
+$typedAnimationDuration: 9s; // Adjust the duration as needed
+$initialDelay: 0ms;
+$delayBetweenCycles: 7s;
+
 @keyframes typed {
     @for $i from 1 through length($strings) {
-
-        // @for $j from 1 through (str-length(nth($strings, $i)) * 2 - 1) {
         @for $j from 1 through (str-length(nth($strings, $i)) * 2) {
-
             /* string #{$i}, char #{$j} */
             @if $j < str-length(nth($strings, $i)) * 2 {
-
-                // not last character deleted
-                #{percent($i, $j, 0)},
-                #{percent($i, $j+1, -0.001)} {
-                    @if $j <=str-length(nth($strings, $i)) {
+                // not the last character deleted
+                #{percent($i, $j, 0)} {
+                    @if $j <= str-length(nth($strings, $i)) {
                         content: quote(#{str_slice(nth($strings, $i), 1, $j)});
-                    }
-
-                    @else {
+                    } @else {
                         content: quote(#{str_slice(nth($strings, $i), 1, str-length(nth($strings, $i)) - ($j - str-length(nth($strings, $i))))});
                     }
                 }
-            }
 
-            @else {
-                @if $i < length($strings) {
-
-                    // not last string
-                    #{percent($i, $j, 0)},
-                    #{percent($i+1, 1, -0.001)} {
-                        content: "​"; // zero-width space to retain element height
+                #{percent($i, $j + 1, -0.001)} {
+                    @if $j <= str-length(nth($strings, $i)) {
+                        content: quote(#{str_slice(nth($strings, $i), 1, $j + 1)});
+                    } @else {
+                        content: quote(#{str_slice(nth($strings, $i), 1, str-length(nth($strings, $i)) - ($j + 1 - str-length(nth($strings, $i))))});
                     }
                 }
+            } @else {
+                @if $i < length($strings) {
+                    // not the last string
+                    #{percent($i, $j, 0)} {
+                        content: "​"; // zero-width space to retain element height
+                    }
 
-                @else {
-
+                    #{percent($i + 1, 1, -0.001)} {
+                        content: "​"; // zero-width space to retain element height
+                    }
+                } @else {
                     // last string
-                    #{percent($i, $j, 0)},
+                    #{percent($i, $j, 0)} {
+                        content: "​"; // zero-width space to retain element height
+                    }
+
                     100% {
                         content: "​"; // zero-width space to retain element height
                     }
@@ -102,11 +108,21 @@ $currentPercentage: 0;
     }
 }
 
+
 @keyframes beam-blink {
+    0% {
+        border-color: transparent;
+    }
+
     75% {
         border-color: transparent;
     }
+
+    100% {
+        border-color: transparent;
+    }
 }
+
 
 * {
     backface-visibility: hidden;
@@ -128,8 +144,7 @@ $currentPercentage: 0;
         border-right: 9px solid rgba(#fff, 0.75);
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
         white-space: nowrap;
-        animation: typed #{$durTotal + "s"} linear 1s infinite,
-        beam-blink 1s infinite;
+        animation: typed $typedAnimationDuration linear $initialDelay infinite, beam-blink 1s infinite;
     }
 
 }

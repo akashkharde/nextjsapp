@@ -108,6 +108,7 @@ function ProjectCarousel({ projects }) {
                         onClick={scrollToPreviousSlide}
                         title="Previous project slide" aria-controls="project-carousel"
                         disabled={currentSlide === 0}
+                        aria-label='black'
                         className={`pointer-events-auto aspect-square h-fit rounded-full border borderColor bg-[#0c141b] p-4 text-${neutralsOne} drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 `}
                     >
                         <Image src={backIcon} alt='back' className='h-5 w-5' />
@@ -118,6 +119,7 @@ function ProjectCarousel({ projects }) {
                         title="Next project slide"
                         aria-controls="project-carousel"
                         disabled={currentSlide === projects.length - 1}
+                        aria-label='next'
                         className={`pointer-events-auto aspect-square h-fit rounded-full border borderColor bg-[#0c141b] p-4 text-${neutralsOne} drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 `}
                     >
                         <Image src={nextIcon} alt='next' className='h-5 w-5' />
