@@ -21,7 +21,7 @@ const HomeSection = () => (
         <div>
           <div id="hero-heading" className={`text-center min-h-[25vh]   text-4xl/tight font-bold text-${neutralsZ} sm:text-5xl/tight md:text-6xl/tight lg:text-7xl/tight scale-105  flex  flex-col justify-between sm:block`} >   <span>TRANSFORMING</span> <span>IDEAS INTO</span> <span>DIGITAL</span> <span>REALITIES</span> </div>
         </div>
-        <div className='typewriter'></div>
+        {/* <div className='typewriter'></div> */}
         <div className='flex my-12'>
           <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={html} alt='html' />
           <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={css} alt='css' />
