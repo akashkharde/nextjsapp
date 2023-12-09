@@ -39,6 +39,7 @@ const GRACE_THRESHOLD = 12;
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [contact, setContact] = useState("hideContact");
+  
   const handleClick = () => {
     setContact("contact");
   }

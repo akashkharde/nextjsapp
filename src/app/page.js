@@ -2,7 +2,6 @@
 import Footer from "./Components/Common/Footer";
 import Header from "./Components/Common/Header";
 import HomeAbout from "./Components/SubComponents/HomeAbout";
-import HomeContact from "./Components/SubComponents/HomeContact";
 import HomeSection from "./Components/SubComponents/HomeSection";
 import HomeServices from "./Components/SubComponents/HomeServices";
 import HomeWork from "./Components/SubComponents/HomeWork";
@@ -22,9 +21,9 @@ export default function Home() {
       <section className="home_servicesTheme" id="services">
         <HomeServices />
       </section>
-      <section className="home_workTheme"  id="work">
+      {/* <section className="home_workTheme"  id="work">
         <HomeWork />
-      </section>
+      </section> */}
       <section  className="home_footerTheme">
       <Footer />
       </section>

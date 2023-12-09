@@ -11,7 +11,7 @@ export default function Footer() {
         window.open(linkedinProfileUrl, '_blank');
       };
     return (
-        <Container className="border-t borderColor">
+        <Container className="border-t-2 borderColor">
             <div className="flex items-center justify-between py-8">
                 <div>Web Development</div>
                 <div className="flex gap-4">

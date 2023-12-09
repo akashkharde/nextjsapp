@@ -46,19 +46,39 @@ function ProjectCarousel({ projects }) {
         );
     }
 
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         if (carouselRef.current) {
+    //             updateCurrentSlide(carouselRef.current.scrollLeft);
+    //         }
+    //     };
+
+    //     carouselRef.current.addEventListener('scroll', handleScroll);
+
+    //     return () => {
+    //         carouselRef.current.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, [carouselSlideWidth, projects.length]);
+
+
     useEffect(() => {
         const handleScroll = () => {
-            if (carouselRef.current) {
-                updateCurrentSlide(carouselRef.current.scrollLeft);
+             const currentCarouselRef = carouselRef.current;
+             if (currentCarouselRef) {
+                 updateCurrentSlide(currentCarouselRef.scrollLeft);
+             }
+        };
+    
+        carouselRef.current.addEventListener('scroll', handleScroll);
+    
+        return () => {
+            const currentCarouselRef = carouselRef.current;
+            if (currentCarouselRef) {
+                currentCarouselRef.removeEventListener('scroll', handleScroll);
             }
         };
-
-        carouselRef.current.addEventListener('scroll', handleScroll);
-
-        return () => {
-            carouselRef.current.removeEventListener('scroll', handleScroll);
-        };
-    }, [carouselSlideWidth, projects.length]);
+    }, [carouselSlideWidth, projects.length, updateCurrentSlide]);
+    
 
     function scrollToSlide(slideIndex) {
         if (carouselRef.current) {
