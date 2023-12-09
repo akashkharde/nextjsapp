@@ -1,68 +1,146 @@
 "use client"
-import Image from "next/image";
-import Title from "../Common/Title";
-import Container from "../Ui/Container";
-import trusted from '../../../../public/Assets/images/trusted.svg';
-import gmail from '../../../../public/Assets/images/gmail.svg';
-import linkedin from '../../../../public/Assets/images/linkedin.svg';
-import phone from '../../../../public/Assets/images/phone.svg';
+import { FormProvider, useForm } from "react-hook-form"
+import { Input } from "../Common/ContactInput"
+import { BsFillCheckSquareFill } from "react-icons/bs";
 import Button from "../Ui/Button";
+import { useState } from "react";
 
   
 export default function HomeContact() {
-    const handleSendMsg = () =>{
-
+    const methods = useForm()
+    const [success, setSuccess] = useState(false)
+  
+    const onSubmit = methods.handleSubmit(data => {
+      console.log(data)
+      methods.reset()
+      setSuccess(true)
+      setTimeout(() => {
+        setSuccess(false)
+      }, 2000)
+    })
+  
+    const name_validation = {
+      name: 'name',
+      label: 'name',
+      type: 'text',
+      id: 'name',
+      placeholder: 'write your name ...',
+      validation: {
+        required: {
+          value: true,
+          message: 'required',
+        },
+        maxLength: {
+          value: 30,
+          message: '30 characters max',
+        },
+      },
     }
+  
+  
+    const email_validation = {
+      name: 'email',
+      label: 'email',
+      type: 'email',
+      id: 'email',
+      placeholder: 'type email ...',
+      validation: {
+        required: {
+          value: true,
+          message: 'Email is required',
+        },
+        pattern: {
+          // Basic email pattern, you can use a more complex one for your needs
+          value: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}$/,
+          message: 'Invalid email address',
+        },
+      },
+    };
+  
+    const phone_validation = {
+      name: 'phone',
+      label: 'phone',
+      type: 'tel',
+      id: 'phone',
+      placeholder: 'type phone number ...',
+      validation: {
+        required: {
+          value: true,
+          message: 'Phone number is required',
+        },
+        minLength: {
+          value: 10,
+          message: 'Phone number should be at least 10 digits',
+        },
+        pattern: {
+          value: /^[0-9]*$/, // Only allow numeric characters
+          message: 'Invalid phone number',
+        },
+      },
+    };
+  
+  
+    const desc_validation = {
+      name: 'desc',
+      label: 'desc',
+      type: 'text',
+      id: 'desc',
+      placeholder: 'type description ...',
+      validation: {
+        required: {
+          value: true,
+          message: 'Description is required',
+        },
+        minWordCount: {
+          value: 3,
+          message: 'Description should contain at least 3 words',
+        },
+      },
+    };
+  
+    const websiteUrlValidation = {
+      name: 'websiteUrl',
+      label: 'Website URL',
+      type: 'url',
+      id: 'websiteUrl',
+      placeholder: 'Enter website URL ...',
+      validation: {
+        required: {
+          value: false,
+          message: 'Website URL is required',
+        },
+        pattern: {
+          value: /^(https?:\/\/)?([a-zA-Z0-9-]+\.){1,}[a-zA-Z]{2,}([\/\w-]*)*$/,
+          message: 'Enter a valid website URL',
+        },
+      },
+    };
     return (
-        <Container>
-            <div className="mt-20">
-                <Title name={"Contact Us"} />
-            </div>
-            <div className="grid md:grid-cols-2 lg:gap-12 md:gap-8 gap-8 my-8">
-                <div className="flex items-center justify-center flex-col">
-                    <input type="text" className="w-full border borderColor bg-transparent px-3 rounded-full h-8 mb-8 focus:none" placeholder="name (required)*" />
-                    <input type="email" className="w-full border borderColor bg-transparent px-3 rounded-full h-8 mb-8" placeholder="E-mail (required)*" />
-                    <input type="text" className="w-full border borderColor bg-transparent px-3 rounded-full h-8 mb-8" placeholder="Contact No (required)*" />
-                    <textarea type="textarea " className="w-full border borderColor bg-transparent px-3 rounded-full mb-8" placeholder="massege" />
-                    <div className="w-full">
-                    < Button className="hover:scale-x-125 hover:transform-gpu mx-6  "background="primary" size="medium" onClick={() => handleSendMsg()} >Contact Us</Button>
-                    </div>
-                </div>
-                <div className="flex flex-col justify-between md:pb-20">
-                    <div className="flex items-center justify-between">
-                        <div className="flex  flex-col items-center">
-                            <Image src={phone} aria-label="Phone Number" alt="phone" className=" h-8 w-8 md:h-10 w-8" />
-                            <div className="text-center">
-                                <p>Phone Call</p>
-                                <p>+91 7719832542</p>
-                            </div>
-                        </div>
-                        <div className="flex  flex-col items-center">
-                            <Image src={gmail} alt="gmail" className=" h-8 w-8 md:h-10 w-8" />
-                            <div className="text-center">
-                                <p>Email Us</p>
-                                <p>akashkharde111@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-between">
-                        <div className="flex  flex-col items-center">
-                            <Image src={linkedin} alt="linkedin" className=" h-8 w-8 md:h-10 w-8" />
-                            <div className="text-center">
-                                <p>linkedin</p>
-                                <p>akashkjhgjhj.com</p>
-                            </div>
-                        </div>
-                        <div className="flex  flex-col items-center">
-                            <Image src={trusted} alt="trusted" className=" h-8 w-8 md:h-10 w-8" />
-                            <div className="text-center">
-                                <p>100%  Trusted</p>
-                                <p>akashkharde111@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </Container>
+      <div>
+         <FormProvider {...methods}>
+            <form
+              onSubmit={e => e.preventDefault()}
+              noValidate
+              autoComplete="off"
+              className="container"
+            >
+              <div className="grid gap-5 md:grid-cols-2 text-white bg-transparent">
+                <Input {...name_validation} />
+                <Input {...email_validation} />
+                <Input {...websiteUrlValidation} />
+                <Input {...phone_validation} />
+                <Input {...desc_validation} className="md:col-span-2" />
+              </div>
+              <div className="mt-5">
+                {success && (
+                  <p className="flex items-center gap-1 mb-5 font-semibold text-green-500">
+                    <BsFillCheckSquareFill /> Form has been submitted successfully
+                  </p>
+                )}
+                < Button className="hover:scale-x-110 " background="primary" size="medium"   onClick={onSubmit}>Submit</Button>
+              </div>
+            </form>
+          </FormProvider>
+      </div>
     )
 }

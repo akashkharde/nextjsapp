@@ -1,10 +1,13 @@
 "use client"
-import Footer from "./Components/Common/Footer";
 import Header from "./Components/Common/Header";
-import HomeAbout from "./Components/SubComponents/HomeAbout";
 import HomeSection from "./Components/SubComponents/HomeSection";
-import HomeServices from "./Components/SubComponents/HomeServices";
-import HomeWork from "./Components/SubComponents/HomeWork";
+
+import dynamic from 'next/dynamic'
+const HomeAbout = dynamic(() => import('./Components/SubComponents/HomeAbout'));
+const HomeServices = dynamic(() => import('./Components/SubComponents/HomeServices'));
+const HomeWork = dynamic(() => import('./Components/SubComponents/HomeWork'));
+const Footer = dynamic(() => import('./Components/Common/Footer'));
+
 
 
 export default function Home() {

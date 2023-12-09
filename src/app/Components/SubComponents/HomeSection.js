@@ -31,7 +31,7 @@ const HomeSection = () => (
           <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={ex} alt='express' />
           <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={db} alt='mongodb' />
         </div>
-        <div className="flex items-stretch gap-x-6 gap-y-0 md:gap-y-3 max-sm:flex-col sm:items-center max-sm:justify-evenly h-[25vh] ">
+        <div className="flex items-stretch gap-x-6 gap-y-0 md:gap-y-3 max-sm:flex-col sm:items-center max-sm:justify-evenly ">
           <Button as="a" href="/#work" background="primary" size="large" >  See Work </Button>
           <Button as="a" href="/#services" background="primary" size="large" >   See services </Button>
         </div>
