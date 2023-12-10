@@ -9,6 +9,7 @@ import Image from 'next/image';
 import close from "../../../../public/Assets/images/close.png";
 import dynamic from 'next/dynamic'
 const HomeContact = dynamic(() => import('../SubComponents/HomeContact'))
+import logo from '../../../../public/Assets/images/logo.svg';
 
 
 
@@ -75,13 +76,13 @@ function Header() {
                 </a>
               ))}
             </nav>
-            <div className="flex items-center justify-center SvgName">
+            <div className="flex items-center justify-center ">
               <a
                 href="/"
                 title="Navigate home"
                 className="hover:animate-jiggle"
               >
-                <span className="font-medium SvgName">WEB DEVELOPMENT</span>
+              <Image src={logo} alt='devitglobe logo' className='logo' />
               </a>
             </div>
             <div className="flex items-center justify-end ">
