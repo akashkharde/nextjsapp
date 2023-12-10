@@ -25,10 +25,6 @@ const links = [
     label: 'Work',
     href: '/#work',
   },
-  {
-    label: 'Blog',
-    href: '/blog',
-  },
 ];
 
 const GRACE_THRESHOLD = 12;
