@@ -144,7 +144,7 @@ $delayBetweenCycles: 7s;
         border-right: 9px solid rgba(#fff, 0.75);
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
         white-space: nowrap;
-        animation: typed $typedAnimationDuration linear $initialDelay infinite, beam-blink 1s infinite;
+        animation: typed $typedAnimationDuration linear $initialDelay infinite, beam-blink 0s infinite;
     }
 
 }
