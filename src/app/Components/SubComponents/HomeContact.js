@@ -116,7 +116,7 @@ export default function HomeContact() {
       },
     };
     return (
-      <div>
+      <div className="pb-10">
          <FormProvider {...methods}>
             <form
               onSubmit={e => e.preventDefault()}
