@@ -26,7 +26,7 @@ const HomeSection = () => (
         <div>
           <div id="hero-heading" className={`text-center min-h-[25vh]   text-4xl/tight font-bold text-${neutralsZ} sm:text-5xl/tight md:text-6xl/tight lg:text-7xl/tight scale-105  flex  flex-col justify-between sm:block`} >   <span>TRANSFORMING</span> <span>IDEAS INTO</span> <span>DIGITAL</span> <span>REALITIES</span> </div>
         </div>
-        {/* <div><LazyTypeWriter /></div> */}
+        <div><LazyTypeWriter /></div>
         <div className='flex my-12'>
           <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={html} alt='html' />
           <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={css} alt='css' />
@@ -36,7 +36,7 @@ const HomeSection = () => (
           <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={ex} alt='express' />
           <Image className='lg:h-20 md:h-16 sm:h-14 h-10 w-auto mx-[5px] wave' src={db} alt='mongodb' />
         </div>
-        <div className="flex items-stretch gap-x-6 gap-y-0 md:gap-y-3 max-sm:flex-col sm:items-center max-sm:justify-evenly ">
+        <div className="flex items-stretch gap-x-6 gap-y-4 md:gap-y-3 max-sm:flex-col sm:items-center max-sm:justify-evenly ">
           <Button as="a" href="/#work" background="primary" size="large" >  See Work </Button>
           <Button as="a" href="/#services" background="primary" size="large" >   See services </Button>
         </div>
